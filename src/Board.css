@@ -31,6 +31,7 @@ div {
   margin-left:100px;
 }
 
+/*
 h1 {
   cursor: pointer;
   margin-top:50px;
@@ -41,6 +42,7 @@ h1:hover {
   transition:transform 0.3s;
   transform:scale(1.2);
 }
+*/
 
 .login {
   cursor: pointer;

@@ -1,31 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './signup.css'
+import Menubar from './menubar.js';
 
 function SignUp() {
     return (
         <div className="Board">
-            <div className="menu">
-                <div className="logo">
-                    <Link to="/" className="main_link">
-						<img alt="codecure_logo" src="/images/logo.png" width="100px" height="100px"/>
-					</Link>
-                </div>
-                <h1>소개</h1>
-                <Link to="/announce"><h1>공지</h1></Link>
-                <Link to="/board"><h1>게시판</h1></Link>
-                <Link to="/QnA"><h1>Q&A</h1></Link>
-                <div className="login">
-                    <Link to="/login" className="login_link">로그인</Link>
-                </div>
-            </div>
+            <Menubar />
             <div className="signup_box">
                 <h2>회원가입</h2>
                 <form method="post" id="signup_form">
                     <p>아이디</p>
                     <div className="idcheckbutton">
                         <input type="text" name="id" placeholder="아이디 입력 (특수문자 제외 알파벳 6~20자)"></input>
-                        <button type="button" name="idcheck" onClick='checkId()'>중복 확인</button>
+                        <button type="button" name="idcheck" onClick='idCheck()'>중복 확인</button>
                         <input type="hidden" name="id_nocheck" value="0"></input>
                     </div>
                     <p>비밀번호</p>
