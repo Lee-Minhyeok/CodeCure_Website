@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Board.css';
 
 function Board() {
@@ -13,7 +14,7 @@ function Board() {
         <h1>게시판</h1>
         <h1>Q&A</h1>
         <div className="login">
-          <span className="login_span">로그인</span>
+				    <Link to="/login" className="login_link">로그인</Link>
         </div>
       </div>
       <div className="title">
