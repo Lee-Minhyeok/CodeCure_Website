@@ -23,9 +23,9 @@ function Login() {
                 <h2>Login</h2>
                 <form method="post" id="login_form">
                     <input type="text" name="id" placeholder="ID"></input>
-                    <input type="passwd" name="pw" placeholder="Password"></input>
+                    <input type="password" name="pw" placeholder="Password"></input>
                     <Link to="/signup" className="signup_link">회원가입</Link>
-                    <input type="submit" value="Login"></input>
+                    <input type="submit" value="로그인"></input>
                 </form>
             </div>
         </div>
