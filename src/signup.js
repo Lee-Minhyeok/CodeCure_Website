@@ -1,21 +1,78 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-import './signup.css'
+//import './signup.css'
 import Menubar from './menubar.js';
+import { D } from './Board_style.js';
+import styled from 'styled-components';
+
+const Div = styled.div`
+    display: flex;
+    align-items: center;
+`
+const Bu = styled.button`
+    background-color: yellowgreen;
+    color: white;
+    font-weight: bold;
+    width: 5rem;
+    height: 50px;
+    padding: 5px 5px;
+    margin-left: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: goldenrod;
+    }
+`
+const Sb = styled.div`
+    margin: auto auto;
+    bottom: 30%;
+    width: 500px;
+    padding: 40px;
+    box-sizing: border-box;
+    font-weight: bold;
+
+    h2 {
+        font-size: 25px;
+        color:darkblue;
+    }
+    p {
+        margin-bottom: 5px;
+    }
+    input {
+        width: 100%;
+        height: 50px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        border-radius: 6px;
+        background-color: lightgrey;
+
+        &::placeholder {
+            color: grey;
+        }
+        &[type="submit"] {
+            cursor: pointer;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: darkblue;
+            margin-top: 10px;
+        }
+    }
+`
 
 function SignUp() {
     return (
-        <div className="Board">
+        <D>
             <Menubar />
-            <div className="signup_box">
+            <Sb>
                 <h2>회원가입</h2>
-                <form method="post" id="signup_form">
+                <form method="post">
                     <p>아이디</p>
-                    <div className="idcheckbutton">
+                    <Div>
                         <input type="text" name="id" placeholder="아이디 입력 (특수문자 제외 알파벳 6~20자)"></input>
-                        <button type="button" name="idcheck" onClick='idCheck()'>중복 확인</button>
+                        <Bu type="button" name="idcheck" onClick='idCheck()'>중복 확인</Bu>
                         <input type="hidden" name="id_nocheck" value="0"></input>
-                    </div>
+                    </Div>
                     <p>비밀번호</p>
                     <input type="password" name="pw" placeholder="비밀번호 입력 (문자, 숫자, 특수문자 포함 8~20자)"></input>
                     <p>비밀번호 확인</p>
@@ -26,8 +83,8 @@ function SignUp() {
                     <input type="text" name="phone" placeholder="휴대폰 번호 입력 ( ' - ' 제외하고 입력)"></input>
                     <input type="submit" value="가입하기"></input>
                 </form>
-            </div>
-        </div>
+            </Sb>
+        </D>
     );
 }
 

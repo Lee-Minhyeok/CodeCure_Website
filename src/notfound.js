@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { D } from './Board_style.js';
 import styled from 'styled-components';
 
 const Nf = styled.div`
@@ -41,14 +42,16 @@ function Notfound() {
     const navigate = useNavigate();
 
     return (
-        <Nf>
-            <div>
-                <h1>404</h1>
-                <p>Page Not Found</p>
-                <Bu onClick={() => { navigate(-1); }} >Go Back</Bu>
-                <Bu onClick={() => { navigate('/'); }}>Go Main</Bu>
-            </div>
-        </Nf>
+        <D>
+            <Nf>
+                <div>
+                    <h1>404</h1>
+                    <p>Page Not Found</p>
+                    <Bu onClick={() => { navigate(-1); }} >Go Back</Bu>
+                    <Bu onClick={() => { navigate('/'); }}>Go Main</Bu>
+                </div>
+            </Nf>
+        </D>
     );
 };
 

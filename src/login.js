@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 //import './login.css'
 import Menubar from './menubar.js';
+import { D } from './Board_style.js';
 import styled from 'styled-components';
 
 const Lb = styled.div`
@@ -49,7 +50,7 @@ const In = styled.input`
 
 function Login() {
     return (
-        <>
+        <D>
             <Menubar />
             <Lb>
                 <h2>Login</h2>
@@ -60,7 +61,7 @@ function Login() {
                     <In type="submit" value="로그인"></In>
                 </form>
             </Lb>
-        </>
+        </D>
     );
 }
 

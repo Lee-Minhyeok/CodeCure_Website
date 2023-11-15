@@ -1,5 +1,16 @@
 import styled from 'styled-components';
 
+export const D = styled.div`
+  max-height: 100vh;
+  overflow: auto;
+  width:1510px;
+  margin: 0 auto;
+  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-use-select: none;
+  user-select: none;
+`
 export const Ti = styled.div`
   display: flex;
   align-items: center;

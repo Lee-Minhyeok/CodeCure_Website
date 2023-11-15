@@ -1,12 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { D } from './Board_style.js';
 import Menubar from './menubar.js';
 
 function Introduce() {
     return (
-        <div className="Board">
+        <D>
             <Menubar />
-        </div>
+        </D>
     )
 };
 

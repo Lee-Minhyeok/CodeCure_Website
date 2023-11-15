@@ -1,11 +1,11 @@
 import React from 'react';
-import { Ti, Fi, Ta, Tr, Nt, Pg } from './Board_style.js';
+import { D, Ti, Fi, Ta, Tr, Nt, Pg } from './Board_style.js';
 //import './Board.css';
 import Menubar from './menubar.js';
 
 function Announce() {
   return (
-    <>
+    <D>
       <Menubar />
       <Ti>
         <br></br>
@@ -98,7 +98,7 @@ function Announce() {
         <div>5</div>
         <div className="active">&gt;</div>
       </Pg>
-    </>
+    </D>
   );
 }
 

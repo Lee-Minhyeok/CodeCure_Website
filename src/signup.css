@@ -1,3 +1,4 @@
+/*
 .signup_box{
     margin: auto auto;
     bottom: 30%;
@@ -23,12 +24,10 @@
     border-radius: 6px;
     background-color: lightgrey;
 }
-
 .idcheckbutton {
     display: flex;
     align-items: center;
 }
-
 button[name="idcheck"] {
     background-color: yellowgreen;
     color: white;
@@ -40,7 +39,6 @@ button[name="idcheck"] {
     border-radius: 6px;
     cursor: pointer;
 }
-
 button[name="idcheck"]:hover {
     background-color: goldenrod;
 }
@@ -55,3 +53,4 @@ button[name="idcheck"]:hover {
     background-color: darkblue;
     margin-top: 10px;
 }
+*/
