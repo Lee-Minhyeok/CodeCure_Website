@@ -1,18 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Board.css';
+import { Ti, Fi, Ta, Tr, Nt, Pg } from './Board_style.js';
+//import './Board.css';
 import Menubar from './menubar.js';
 
 function Board() {
   return (
-    <div className="Board">
+    <>
       <Menubar />
-      <div className="title">
+      <Ti>
         <br></br>
-        <p className="title_p">게시판</p>
+        <p>게시판</p>
         <br></br>
-      </div>
-      <div className="filter">
+      </Ti>
+      <Fi>
         <div className="filter_title">
           <form method="get">
             <select>
@@ -36,87 +36,69 @@ function Board() {
         <div className="total">
           Total - 건
         </div>
-      </div>
-      <div className="table">
-        <table>
-          <thead>
-              <tr className="table_head">
-                <th>번호</th>
-                <th width="700">제목</th>
-                <th width="100">글쓴이</th>
-                <th width="100">조회수</th>
-                <th width="100">작성 날짜</th>
-              </tr>
-          </thead>
-          <tfoot>
-            <tr className="table_foot"></tr>
-          </tfoot>
-          <tbody>
-              <tr className="table_body">
-                <td width="100">105</td>
-                <td id="title" width="700">제목1</td>
-                <td width="100">OOO</td>
-                <td width="100">50</td>
-                <td width="100">2023.10.21</td>
-              </tr>
-              <tr className="table_body">
-                <td width="100">105</td>
-                <td id="title" width="700">제목1</td>
-                <td width="100">OOO</td>
-                <td width="100">50</td>
-                <td width="100">2023.10.21</td>
-              </tr>
-              <tr className="table_body">
-                <td width="100">105</td>
-                <td id="title" width="700">제목1</td>
-                <td width="100">OOO</td>
-                <td width="100">50</td>
-                <td width="100">2023.10.21</td>
-              </tr>
-              <tr className="table_body">
-                <td width="100">105</td>
-                <td id="title" width="700">제목1</td>
-                <td width="100">OOO</td>
-                <td width="100">50</td>
-                <td width="100">2023.10.21</td>
-              </tr>
-              <tr className="table_body">
-                <td width="100">105</td>
-                <td id="title" width="700">제목1</td>
-                <td width="100">OOO</td>
-                <td width="100">50</td>
-                <td width="100">2023.10.21</td>
-              </tr>
-          </tbody>
-        </table>
-      </div>
-      <div className="newText">
-        글쓰기
-      </div>
-      <div className="pageNumber">
-        <div id="number_active">
-          &lt;
-        </div>
-        <div id="number_active">
-          1
-        </div>
-        <div id="number">
-          2
-        </div>
-        <div id="number">
-          3
-        </div>
-        <div id="number">
-          4
-        </div>
-        <div id="number">
-          5
-        </div>
-        <div id="number_active">
-          &gt;
-        </div>
-      </div>
-    </div>
+      </Fi>
+      <Ta>
+        <thead>
+            <tr>
+              <th>번호</th>
+              <th className="title">제목</th>
+              <th>글쓴이</th>
+              <th>조회수</th>
+              <th>작성 날짜</th>
+            </tr>
+        </thead>
+        <tfoot>
+          <tr></tr>
+        </tfoot>
+        <tbody>
+            <Tr>
+              <td>105</td>
+              <td className="text_title">제목1</td>
+              <td>OOO</td>
+              <td>50</td>
+              <td>2023.10.21</td>
+            </Tr>
+            <Tr>
+              <td>105</td>
+              <td className="text_title">제목1</td>
+              <td>OOO</td>
+              <td>50</td>
+              <td>2023.10.21</td>
+            </Tr>
+            <Tr>
+              <td>105</td>
+              <td className="text_title">제목1</td>
+              <td>OOO</td>
+              <td>50</td>
+              <td>2023.10.21</td>
+            </Tr>
+            <Tr>
+              <td>105</td>
+              <td className="text_title">제목1</td>
+              <td>OOO</td>
+              <td>50</td>
+              <td>2023.10.21</td>
+            </Tr>
+            <Tr>
+              <td>105</td>
+              <td className="text_title">제목1</td>
+              <td>OOO</td>
+              <td>50</td>
+              <td>2023.10.21</td>
+            </Tr>
+        </tbody>
+      </Ta>
+      <Nt>글쓰기</Nt>
+      <Pg>
+        <div className="active">&lt;</div>
+        <div className="active">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div className="active">&gt;</div>
+      </Pg>
+    </>
   );
 }
 
