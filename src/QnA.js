@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { D, Ti, Fi, Ta, Tr, Nt, Pg } from './Board_style.js';
 //import './Board.css';
 import Menubar from './menubar.js';
@@ -88,7 +89,7 @@ function QnA() {
             </Tr>
         </tbody>
       </Ta>
-      <Nt>글쓰기</Nt>
+      <Nt><Link to="/newpost">글쓰기</Link></Nt>
       <Pg>
         <div className="active">&lt;</div>
         <div className="active">1</div>

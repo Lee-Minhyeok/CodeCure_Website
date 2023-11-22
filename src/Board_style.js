@@ -94,6 +94,16 @@ export const Nt = styled.div`
   padding : 5px;
   width: 50px;
   text-align: center;
+  
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    
+    &:hover {
+      color: red;
+    }
+  }
 `;
 export const Pg = styled.div`
   display:flex;
