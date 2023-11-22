@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { D, Ti, Fi, Ta, Tr, Nt, Pg } from './Board_style.js';
 //import './Board.css';
 import Menubar from './menubar.js';

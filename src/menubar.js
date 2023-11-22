@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect }from 'react';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Menu = styled.h1`
     cursor: pointer;
@@ -65,7 +65,7 @@ const Login = styled.div`
     }
 `
 
-const Menubar = () => {
+function Menubar() {
     return (
         <Div>
             <Logo>

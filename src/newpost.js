@@ -9,6 +9,9 @@ const Ed = styled.form`
     width: 1000px;
     height: 800px;
 `
+const Sl = styled.select`
+    margin: 10px;
+`
 const Tt = styled.input`
     padding: 10px;
     margin-left: 10px;
@@ -40,6 +43,12 @@ function Newpost() {
         <D>
             <Menubar />
             <Ed>
+                <Sl>
+                    <option>- 카테고리--</option>
+                    <option>공지사항</option>
+                    <option>게시판</option>
+                    <option>Q&A</option>
+                </Sl>
                 <Tt type="text" name="title" placeholder="제목을 입력하세요"></Tt>
                 <hr />
                 <ReactQuill 
