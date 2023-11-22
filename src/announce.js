@@ -21,7 +21,7 @@ function Announce() {
               <option value="writer">작성자</option>
               <option value="content">본문</option>
             </select>
-            <input type="text" name="search" size="30" placeholder="검색어를 입력하세요" />
+            <input type="text" name="search" size="30" placeholder="검색어를 입력하세요"/>
             <button>검색</button>
           </form>
         </div>
