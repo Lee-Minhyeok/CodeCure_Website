@@ -6,6 +6,7 @@ import Board from './board';
 import QnA from './QnA';
 import Login from './login';
 import SignUp from './signup';
+import FindPW from './findPW';
 import Introduce from './introduce';
 import Newpost from './newpost';
 import Notfound from './notfound';
@@ -22,6 +23,8 @@ function App() {
 				<Route path="/newpost" element={<Newpost />}></Route>
 				<Route path="/login" element={<Login />}></Route>
 				<Route path="/signup" element={<SignUp />}></Route>
+				<Route path="/finPW" element={<FindPW />}></Route>
+				<Route path="/finPW" element={<FindPW />}></Route>
 				<Route path="/*" element={<Notfound />}></Route>
 			</Routes>
 		</BrowserRouter>
