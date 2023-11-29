@@ -34,14 +34,30 @@ export const Fi = styled.div`
   margin-bottom:5px;
   display:flex;
 
+  select {
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 2px;
+  }
+  input {
+    padding: 5px;
+    margin: 2px;
+  }
+  button {
+    padding: 5px;
+    width: 3rem;
+  }
+
   .filter_title {
     margin-left:200px;
   }
   .filter_sort {
-    margin-left:600px;
+    margin-left:550px;
   }
   .total {
-    margin-left:40px;
+    margin-top: 5px;
+    margin-left:45px;
   }
 `;
 export const Ta = styled.table`

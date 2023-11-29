@@ -66,19 +66,27 @@ const Login = styled.div`
 `
 
 function Menubar() {
+    const handleCheck = (e) => {
+        const isConfirmed = window.confirm('정말 이동하시겠습니까?');
+
+        if (!isConfirmed) {
+            e.preventDefault();
+        }
+    };
+
     return (
         <Div>
             <Logo>
-                <Link to="/">
+                <Link to="/" onClick={ handleCheck }>
                     <img alt="codecure_logo" src="/images/logo.png" width="100px" height="100px"/>
                 </Link>
             </Logo>
-            <Link to="/introduce"><Menu>소개</Menu></Link>
-            <Link to="/announce"><Menu>공지</Menu></Link>
-            <Link to="/board"><Menu>게시판</Menu></Link>
-            <Link to="/QnA"><Menu>Q&A</Menu></Link>
+            <Link to="/introduce" onClick={ handleCheck }><Menu>소개</Menu></Link>
+            <Link to="/announce" onClick={ handleCheck }><Menu>공지</Menu></Link>
+            <Link to="/board" onClick={ handleCheck }><Menu>게시판</Menu></Link>
+            <Link to="/QnA" onClick={ handleCheck }><Menu>Q&A</Menu></Link>
             <Login>
-                <Link to="/login">로그인</Link>
+                <Link to="/login" onClick={ handleCheck }>로그인</Link>
             </Login>
         </Div>
     )
