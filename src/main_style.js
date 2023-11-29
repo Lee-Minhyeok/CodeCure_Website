@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 
-
 export const M = styled.div`
     font-size: 15px;
     text-align: center;
@@ -14,25 +13,25 @@ export const A = styled.div`
     border: 1px solid red;
     width: 280px;
 `
-// 이거 왜 안먹는지 border로 해봤는데도 안되고, div처럼 먹음
+
 export const Search = styled.input`
     border: 1px solid red;
     width: 580px;
-    
     margin: 10px 320px;
     padding: 10px;
     font-size: 20px;
-    
+
     padding-right: 200px;
 
 `;
 
 export const Slogan = styled.div`
     border: 1px solid blue;
-    width: 500px;
-    margin: 0 320px;
+    width: 460px;
+    margin: 0px 320px;
     margin-top: -240px;
     padding : 200px;
+    font-size: 100px;
 `
 
 export const Visit = styled.div`
@@ -55,7 +54,7 @@ export const Calender = styled.div`
 //     height: 20px;
 // `
 
-export const Search_btn = styled.button`
+export const SearchBtn = styled.button`
     border: 1px solid red;
     padding: 14px;
     margin-left: -300px;

@@ -9,7 +9,7 @@ import {Search} from './main_style.js';
 import {Slogan} from './main_style.js';
 import {Visit} from './main_style.js';
 import {Calender} from './main_style.js';
-import {Search_btn} from './main_style.js';
+import {SearchBtn} from './main_style.js';
 // import {Week} from './main_style.js';
 
 function Main() {
@@ -17,9 +17,9 @@ function Main() {
 		<D>
 			<Menubar />
 			<Search placeholder="검색어를 입력하세요"/>
-			<Search_btn >
+			<SearchBtn >
 				입력
-			</Search_btn>
+			</SearchBtn>
 			<Calender>
 				<div className="app">
 					<h1>Calendar</h1>
@@ -34,7 +34,7 @@ function Main() {
 				</div>
 			</Calender>
 			<Slogan>
-				
+				CodeCure
 			</Slogan>
 			
 			<M>

@@ -58,6 +58,7 @@ function Login() {
                     <In type="text" name="id" placeholder="ID"></In>
                     <In type="password" name="pw" placeholder="Password"></In>
                     <Link to="/signup">회원가입</Link>
+                    <Link to="/findPW">&nbsp;&nbsp;&nbsp;&nbsp;비밀번호 찾기</Link>
                     <In type="submit" value="로그인"></In>
                 </form>
             </Lb>
