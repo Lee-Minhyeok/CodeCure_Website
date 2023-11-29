@@ -11,6 +11,9 @@ const Ed = styled.form`
 `
 const Sl = styled.select`
     margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
 `
 const Tt = styled.input`
     padding: 10px;
@@ -44,7 +47,7 @@ function Newpost() {
             <Menubar />
             <Ed>
                 <Sl>
-                    <option>- 카테고리--</option>
+                    <option>--카테고리--</option>
                     <option>공지사항</option>
                     <option>게시판</option>
                     <option>Q&A</option>
