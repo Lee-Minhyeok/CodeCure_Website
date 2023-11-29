@@ -1,6 +1,4 @@
 import React from 'react'
-//import './signup.css'
-import { Link } from 'react-router-dom';
 import Menubar from './menubar.js';
 import { D } from './Board_style.js';
 import styled from 'styled-components';
@@ -48,6 +46,10 @@ const Sb = styled.div`
 `;
 
 function FindPW() {
+    const idCheck = () => {
+        alert("아직 구현 안됨");
+    };
+
     return (
         <D>
             <Menubar />
@@ -57,13 +59,13 @@ function FindPW() {
                     <Sb>
                         <Div>
                             <input type="text" name="id" placeholder="학번 입력"></input>
-                            <Bu2 type="button" name="idcheck" onClick='idCheck()'>확인</Bu2>
+                            <Bu2 type="button" name="idcheck" onClick={ idCheck }>확인</Bu2>
                             <input type="hidden" name="id_nocheck" value="0"></input>
                         </Div>
                         <p>이름 : {}</p>
                         <p>전화번호 : {}</p>
                         {/* 인증번호 */}
-                        <Bu2 type="button" name="idcheck" onClick='idCheck()'>인증번호 전송</Bu2>
+                        <Bu2 type="button" name="idcheck" onClick={ idCheck }>인증번호 전송</Bu2>
                     </Sb>
                 </Div>
             </form>

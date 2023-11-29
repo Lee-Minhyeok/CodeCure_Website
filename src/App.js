@@ -10,6 +10,7 @@ import FindPW from './findPW';
 import Introduce from './introduce';
 import Newpost from './newpost';
 import Notfound from './notfound';
+import Login from './login';
 
 function App() {
 	return (
@@ -23,8 +24,7 @@ function App() {
 				<Route path="/newpost" element={<Newpost />}></Route>
 				<Route path="/login" element={<Login />}></Route>
 				<Route path="/signup" element={<SignUp />}></Route>
-				<Route path="/finPW" element={<FindPW />}></Route>
-				<Route path="/finPW" element={<FindPW />}></Route>
+				<Route path="/findPW" element={<FindPW />}></Route>
 				<Route path="/*" element={<Notfound />}></Route>
 			</Routes>
 		</BrowserRouter>
